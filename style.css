@@ -1,6 +1,83 @@
 body{
     margin: 0%;
     display: grid;
-    grid-template-areas: 'header header header header'
-    
+    grid-template-areas: 'header header header header' 
+                         'navbar navbar navbar navbar' 
+                         'section section aside aside'
+                         'div div div div'
+                         'footer footer footer footer';
+    grid-template-rows: 30vh 20vh 60vh 20vh 40vh;
+    grid-gap: 15px;
+    background-color: black;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(1, 3, 36);
+}
+
+nav{
+    grid-area: navbar;
+    background-color: rgb(0, 0, 253);
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(152, 184, 255);
+
+}
+
+aside{
+    grid-area: aside;
+    background-color: aquamarine;
+}
+
+div{
+    grid-area: div;
+    background-color: rgb(0, 0, 253);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(63, 63, 82);
+}
+
+header h1{
+    font-size: 30pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkred;
+    text-align: center;
+}
+
+nav h2{
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+}
+
+section h2{
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+aside h2{
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+div h2{
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+}
+
+footer h3{
+    font-size: 20pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkred;
+    text-align: center;
 }
